@@ -1,0 +1,365 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 15px;
+	line-height: 1.6; 
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* Header */
+
+.header {
+	margin-top: 70px;
+}
+
+.firstcontainer {
+	width: 100%;
+	max-width: 1070px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__link {
+	display: inline-block;
+	margin: 0 75px;
+	position: relative;
+	color: #a1a1a1;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color .2s linear;
+}
+
+.nav__link:last-child {
+	margin-right: 0;
+}
+
+.nav__link:hover {
+	color: #fff;
+	background: #a1a1a1; 
+}
+
+
+/* Intro is the first screen */
+
+.firstscreen {
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+
+/* Section is the second screen with text */
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.firstsection__subtitle {
+	margin-top: 50px;
+	margin-bottom: 25px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #c7c1b6;
+}
+
+.section__title {
+	margin-bottom: 25px;
+
+	font-size: 30px;
+	color: #626262;
+}
+
+.section__text {
+	margin-bottom: 55px;
+
+	font-size: 14px;
+	color: #626262;
+}
+
+/* Blog */
+
+.articles {
+	margin: 130px -15px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.articles__item {
+	width: 50%;
+	padding: 0 15px;
+}
+
+.articles__inner {
+	position: relative;
+}
+
+.articles__img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+	margin-bottom: 30px;
+}
+
+.blog__photo {
+	margin-top: 75px;
+}
+
+.section__subtitle {
+	margin-bottom: 25px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #c7c1b6;
+}
+
+/* Sugn up (подписка) */
+
+.newslatter {
+   background-color: #f0f0f0;
+}
+
+.newslatter__title {
+	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 80px;
+	font-size: 30px;
+	color: #626262;
+}
+
+.with__icon {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newslatter__text {
+	font-size: 14px;
+	color: #757575;
+
+	margin-left: 227px;
+}
+
+.newslatter__text:after {
+ 	content: "";
+	display: block;
+	width: 400px;
+	height: 1px;
+	margin: 10px auto;
+	background-color: #000;
+
+	margin-left: 5px;
+	margin-bottom: 70px;
+}
+
+.text__icon {
+	padding: 0 35px 0 600px;
+	position: relative;
+	margin-top: -100px;
+}
+
+/* Blog после подписки */
+
+/* Кнопка */
+
+.btn {
+	display: inline-block;
+	position: relative;
+    text-align: center;
+	border: 1px solid #626262;
+
+    margin: 170px auto;
+	padding: 12px 20px;
+
+	font-size: 20px;
+	color: #626262;
+	text-decoration: none;
+
+	transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+	background: #c7c1b6;
+	color: #fff;
+}
+
+/* Footer */
+
+.footer {
+	height: 95px;
+	background-color: #f0f0f0;
+}
+.nav__footer {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link__footer {
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+
+	margin-top: 30px;
+}
+
+.footer__social {
+	font-size: 14px;
+	padding-left: 410px;
+	color: #000;
+
+	margin-top: 30px;
+}
+
+i {
+	color: #626262;
+	margin-top: 30px;
+}
+
+/* Adaptive */
+
+@media (max-width: 1230px) {
+	/* Intro is the first screen */
+.firstscreen {
+    max-width: 100%;
+    margin-bottom: 65px;
+    }
+
+.nav__link:last-child {
+    margin-right: 20px;
+    }
+}
+/* Blog */
+.blog__photo {
+    margin-top: -40px;
+}
+
+.section__subtitle {
+	margin-top: -10px;
+    }
+
+.section__text {
+    margin-bottom: -10px;
+}
+/* Sugn up (подписка) */
+.newslatter__title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* footer */
+.footer {
+    margin-top: -93px;
+    height: 95px;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 990px) {
+    /* Intro is the first screen */
+.firstscreen {
+    max-width: 100%;
+    }
+.firstsection__subtitle {
+    margin-bottom: -60px;
+}
+.nav__link {
+	font-size: 14px;
+}
+.nav__link:last-child {
+    margin-right: 40px;
+}
+	/* Blog */
+.articles {
+    margin: 30px -15px;
+}
+.articles__item {
+    width: 100%;
+    }
+.blog__photo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+.section__subtitle {
+	margin-top: 0px;
+    }
+/* Sugn up (подписка) */    
+.newslatter {
+    margin-bottom: -25px;
+}
+.footer {
+    margin-top: 30px;
+}
+}
+
+
+@media (max-width: 770px) {
+/* Section is the second screen with text */
+.section__title {
+    font-size: 25px;
+}	
+	/* Blog */
+.articles__item {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+/* Sugn up (подписка) */      
+.newslatter__title {
+    font-size: 25px;
+}   
+/* Кнопка */
+.btn {
+    margin: 115px auto;
+}    
+}
+
+@media (max-width: 575px) {
+	/* Blog */
+.articles__item {
+    width: 100%;
+    }
+/* Sugn up (подписка) */        
+.newslatter__text {
+    margin: 0 auto;
+}
+.text__icon {
+    padding: 0 35px 0 500px;
+}
+.latter__icon {
+	margin: 0 -225px;
+}
+/* footer */
+.footer__social {
+    padding-left: 255px;
+}
+i {
+	padding-right: 10px;
+    padding-left: 10px;
+}
+}
